@@ -13,7 +13,7 @@
 					"referenceName": "Keys",
 					"type": "LinkedServiceReference"
 				},
-				"secretName": "FrameworkMetadataDev"
+				"secretName": "MetadataDBConnectionString"
 			}
 		}
 	}
