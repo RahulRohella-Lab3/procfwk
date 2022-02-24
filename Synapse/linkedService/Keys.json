@@ -7,11 +7,7 @@
 		],
 		"type": "AzureKeyVault",
 		"typeProperties": {
-			"baseUrl": "https://keyvault4-ae-r2.vault.azure.net/",
-			"credential": {
-				"referenceName": "Synapse-User-Assigned-Identity-Credential",
-				"type": "CredentialReference"
-			}
+			"baseUrl": "https://keyvault4-ae-r2.vault.azure.net/"
 		}
 	}
 }
