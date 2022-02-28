@@ -17,15 +17,15 @@
 		},
 		"FrameworkFunctions_properties_typeProperties_functionAppUrl": {
 			"type": "string",
-			"defaultValue": "https://frameworksupportfunctions.azurewebsites.net"
+			"defaultValue": "https://function-app-ae-r2.azurewebsites.net"
 		},
 		"Keys_properties_typeProperties_baseUrl": {
 			"type": "string",
-			"defaultValue": "https://FrameworkKeys.vault.azure.net/"
+			"defaultValue": "https://keyvault4-ae-r2.vault.azure.net/"
 		},
 		"SupportDatabase_properties_typeProperties_connectionString_secretName": {
 			"type": "string",
-			"defaultValue": "FrameworkMetadataDev"
+			"defaultValue": "MetadataDBConnectionString"
 		},
 		"covid-tracking_sasUri": {
 			"type": "secureString",
@@ -3822,7 +3822,7 @@
 							"referenceName": "Keys",
 							"type": "LinkedServiceReference"
 						},
-						"secretName": "FrameworkFunctionsKey"
+						"secretName": "FunctionsDefaultKey"
 					},
 					"authentication": "Anonymous"
 				}
@@ -4016,7 +4016,8 @@
 						"dataFlowProperties": {
 							"computeType": "General",
 							"coreCount": 8,
-							"timeToLive": 0
+							"timeToLive": 0,
+							"cleanup": true
 						}
 					}
 				},

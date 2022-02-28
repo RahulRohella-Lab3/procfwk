@@ -12,13 +12,13 @@
 			"value": ""
 		},
 		"FrameworkFunctions_properties_typeProperties_functionAppUrl": {
-			"value": "https://frameworksupportfunctions.azurewebsites.net"
+			"value": "https://function-app-ae-r2.azurewebsites.net"
 		},
 		"Keys_properties_typeProperties_baseUrl": {
-			"value": "https://FrameworkKeys.vault.azure.net/"
+			"value": "https://keyvault4-ae-r2.vault.azure.net/"
 		},
 		"SupportDatabase_properties_typeProperties_connectionString_secretName": {
-			"value": "FrameworkMetadataDev"
+			"value": "MetadataDBConnectionString"
 		},
 		"covid-tracking_sasUri": {
 			"value": ""
