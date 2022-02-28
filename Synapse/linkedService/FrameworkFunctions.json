@@ -16,8 +16,7 @@
 				},
 				"secretName": "FunctionsDefaultKey"
 			},
-			"authentication": "MSI",
-			"resourceId": ""
+			"authentication": "Anonymous"
 		}
 	},
 	"type": "Microsoft.Synapse/workspaces/linkedservices"
