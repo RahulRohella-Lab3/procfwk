@@ -2204,7 +2204,7 @@
 							"retry": 0,
 							"retryIntervalInSeconds": 30,
 							"secureOutput": false,
-							"secureInput": true
+							"secureInput": false
 						},
 						"userProperties": [],
 						"typeProperties": {
@@ -2419,7 +2419,7 @@
 							"timeout": "0.00:10:00",
 							"retry": 0,
 							"retryIntervalInSeconds": 30,
-							"secureOutput": true,
+							"secureOutput": false,
 							"secureInput": false
 						},
 						"userProperties": [],
