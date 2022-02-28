@@ -1,21 +1,17 @@
 {
 	"name": "FrameworkFunctions",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
 	"properties": {
+		"description": "Interact with the Azure Functions App used as middle ware when making requests to Worker pipelines. Authentication done at the Function App level.",
 		"annotations": [
 			"procfwk"
 		],
 		"type": "AzureFunction",
 		"typeProperties": {
-			"functionAppUrl": "https://frameworksupportfunctions.azurewebsites.net",
-			"functionKey": {
-				"type": "AzureKeyVaultSecret",
-				"store": {
-					"referenceName": "Keys",
-					"type": "LinkedServiceReference"
-				},
-				"secretName": "FrameworkFunctionsKey"
-			}
-		},
-		"description": "Interact with the Azure Functions App used as middle ware when making requests to Worker pipelines. Authentication done at the Function App level."
+			"functionAppUrl": "https://function-app-ae-r2.azurewebsites.net",
+			"authentication": "MSI",
+			"resourceId": "",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIlNZTkFQU0VANjQ1MzUyMDYtMTQ0Qy00Qzk0LUI0N0UtOTAyMTFERUU5MkE0Xzg5NDZjZGRmLTA3MmMtNGNhMy1iYmY0LTNkYTM2ZWNhZWU0ZCINCn0="
+		}
 	}
 }
